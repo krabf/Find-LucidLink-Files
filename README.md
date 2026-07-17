@@ -1,8 +1,8 @@
 # Find LucidLink File
 
-Fixes a specific annoyance: LucidLink Classic direct links (`lucid://...`) don't work when pasted into Notion. Notion only recognizes `http`/`https` links, so `lucid://` links show up as plain text instead of clickable ones.
+Fixes a specific annoyance: [LucidLink Classic](https://www.lucidlink.com/classic) direct links (`lucid://...`) don't work when pasted into Notion. Notion only recognizes `http`/`https` links, so `lucid://` links show up as plain text instead of clickable ones.
 
-This script takes a LucidLink Classic direct link, finds the matching file, and reveals it in Finder (macOS) or File Explorer (Windows) — no need for the link to be clickable at all.
+This script takes a LucidLink Classic direct link, finds the matching file, and reveals it in Finder (macOS) or File Explorer (Windows). No need for the link to be clickable at all.
 
 ## How it works
 
@@ -70,8 +70,8 @@ For anyone who doesn't use Raycast, or just wants to test it first.
 ## Known limitations
 
 - **Filename-only matching.** If two files share a name in different folders, it opens whichever one it finds first.
-- **No index.** Since Spotlight/Windows Search can't index LucidLink, every run walks the file tree directly — fine for now, will get slower as the archive grows.
-- **No auto-reconnect.** If the filespace isn't mounted, you'll get a notification saying so — you'll need to reconnect it in LucidLink and re-run.
+- **No index.** Since Spotlight/Windows Search can't index LucidLink, every run walks the file tree directly. This is fine for now but it will get slower as the archive grows.
+- **No auto-reconnect.** If the filespace isn't mounted, you'll get a notification saying so. You'll need to reconnect it in LucidLink and re-run.
 
 ---
 
